@@ -19,9 +19,13 @@ export default function Users() {
           <p>Epost: {user.email}</p>
         </div>
       ))}
+      <div>
+        <h3>Would you like to add a user to the list?</h3>
+      </div>
+
       <div className="input-container">
-        <input type="text" placeholder="Enter user name" />
-        <input type="email" placeholder="Enter user email" />
+        <input type="text" placeholder="Enter name" />
+        <input type="email" placeholder="Enter email" />
         <button>Add User</button>
       </div>
     </div>
