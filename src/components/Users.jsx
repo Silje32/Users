@@ -28,9 +28,24 @@ export default function Users() {
       </div>
 
       <div className="input-container">
-        <input type="text" placeholder="Enter name" />
-        <input type="email" placeholder="Enter email" />
-        <button>Add User</button>
+        <input
+          type="text"
+          placeholder="Enter name"
+          onChange={(e) =>
+            setNewUser((prev) => ({ ...prev, username: e.target.value }))
+          }
+        />
+        <input
+          type="email"
+          placeholder="Enter email"
+          onChange={(e) =>
+            setNewUser((prev) => ({ ...prev, email: e.target.value }))
+          }
+        />
+
+        <button onClick={() => setData((prev) => [...prev, newUser])}>
+          Add User
+        </button>
       </div>
     </div>
   );
