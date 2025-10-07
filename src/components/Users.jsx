@@ -12,13 +12,13 @@ export default function Users() {
 
   return (
     <div>
+      <h1>USERS</h1>
       {data.map((user, index) => (
         <div key={index}>
-          <p>Navn: {user.username}</p>
+          <h2>Navn: {user.username}</h2>
           <p>Epost: {user.email}</p>
         </div>
       ))}
-      <h1>USERS</h1>
       <div className="input-container">
         <input type="text" placeholder="Enter user name" />
         <input type="email" placeholder="Enter user email" />
