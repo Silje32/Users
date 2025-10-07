@@ -8,17 +8,22 @@ export default function Users() {
     { username: "Sander", email: "sander@kodehode.no" },
   ];
 
-  const [name, setName] = useState(mockData);
-  const [email, setEmail] = useState(null);
+  const [data, setData] = useState(mockData);
 
   return (
-    <>
+    <div>
+      {data.map((user, index) => (
+        <div key={index}>
+          <p>Navn: {user.username}</p>
+          <p>Epost: {user.email}</p>
+        </div>
+      ))}
       <h1>USERS</h1>
       <div className="input-container">
         <input type="text" placeholder="Enter user name" />
         <input type="email" placeholder="Enter user email" />
         <button>Add User</button>
       </div>
-    </>
+    </div>
   );
 }
