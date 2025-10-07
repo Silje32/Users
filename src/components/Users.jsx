@@ -8,7 +8,7 @@ export default function Users() {
     { username: "Sander", email: "sander@kodehode.no" },
   ];
 
-  const [name, setName] = useState("");
+  const [name, setName] = useState(mockData);
   const [email, setEmail] = useState(null);
 
   return (
