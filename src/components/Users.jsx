@@ -8,7 +8,11 @@ export default function Users() {
     { username: "Sander", email: "sander@kodehode.no" },
   ];
 
+  // Put the array of objects in a useState
   const [data, setData] = useState(mockData);
+
+  // Update input field
+  const [newUser, setNewUser] = useState({});
 
   return (
     <div>
