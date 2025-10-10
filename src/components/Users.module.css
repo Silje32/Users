@@ -1,0 +1,57 @@
+h1 {
+  color: var(--blue);
+  text-align: center;
+  font-size: 60px;
+}
+.userlist {
+  background-color: var(--light-blue);
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid var(--blue);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.new_user {
+  text-align: center;
+  padding: 16px;
+  margin: 16px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 40px;
+  font-size: 30px;
+  color: var(--steel);
+}
+.container {
+  font-family: var(--font-family);
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid var(--steel);
+  border-radius: 4px;
+  width: 200px;
+}
+button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
